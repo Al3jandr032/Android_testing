@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Prueba</string>
+    <string name="action_settings">Settings</string>
+    <string name="cuenta_text_view">Cuenta</string>
+    <string name="cuenta_edit_text">0.0</string>
+    
+    <string name="propina_text_view">Propina</string>
+    <string name="propina_edit_text">.15</string>
+    
+    <string name="cuenta_final_text_view">Cuenta Final</string>
+    <string name="cuenta_final_edit_text">.15</string>
+    <string name="propina_progreso_text_view">Propina</string>
+
+</resources>

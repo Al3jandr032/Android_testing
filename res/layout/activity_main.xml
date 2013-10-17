@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/cuentaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/cuenta_text_view" />
+
+    <EditText
+        android:id="@+id/cuentaEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cuentaTextView"
+        android:layout_alignBottom="@+id/cuentaTextView"
+        android:layout_toRightOf="@+id/cuentaTextView"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:text="@string/cuenta_edit_text" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cuentaTextView"
+        android:layout_below="@+id/cuentaEditText"
+        android:layout_marginTop="25dp"
+        android:text="@string/propina_text_view" />
+
+    <EditText
+        android:id="@+id/propinaEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:text="@string/propina_edit_text" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/cunatafinalEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cuentafinalTextView"
+        android:layout_alignBottom="@+id/cuentafinalTextView"
+        android:layout_toRightOf="@+id/cuentafinalTextView"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/cuenta_final_edit_text" />
+
+    <TextView
+        android:id="@+id/cuentafinalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/propinaEditText"
+        android:layout_below="@+id/propinaEditText"
+        android:layout_marginTop="92dp"
+        android:text="@string/cuenta_final_text_view" />
+
+    <TextView
+        android:id="@+id/ProgressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/propinaEditText"
+        android:layout_marginTop="28dp"
+        android:text="@string/propina_progreso_text_view" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cunatafinalEditText"
+        android:layout_alignRight="@+id/cunatafinalEditText" 
+        android:progress="15"/>
+
+</RelativeLayout>
